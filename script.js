@@ -6,8 +6,8 @@ async function getWeather() {
   }
 
   try {
-    const response = await fetch(`/weather?city=${city}`);
-    const data = await response.json();
+  const response = await fetch(`https://weatherapp-yc3j.onrender.com/weather?city=${city}`);
+  const data = await response.json();
 
     const resultDiv = document.getElementById("weather-result");
 
@@ -25,3 +25,4 @@ async function getWeather() {
     console.error("Error fetching weather:", err);
   }
 }
+

@@ -1,34 +1,33 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+  background: #f0f4f8;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 
 .container {
   background: white;
-  padding: 20px 30px;
+  padding: 40px;
   border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   text-align: center;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
   width: 300px;
 }
 
 input {
-  padding: 8px;
-  margin-top: 10px;
   width: 80%;
-  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
 button {
-  margin-top: 10px;
-  padding: 8px 16px;
-  background: #007bff;
+  padding: 10px 20px;
+  background-color: #0077cc;
   color: white;
   border: none;
   border-radius: 6px;
@@ -36,10 +35,10 @@ button {
 }
 
 button:hover {
-  background: #0056b3;
+  background-color: #005fa3;
 }
 
-#weather-result {
-  margin-top: 15px;
-  font-size: 1.1em;
+#result {
+  margin-top: 20px;
+  font-weight: bold;
 }

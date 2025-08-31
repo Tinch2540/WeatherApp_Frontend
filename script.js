@@ -8,6 +8,7 @@ async function getWeather() {
   }
 
   try {
+    // Use your Render URL here
     const response = await fetch(`https://weatherapp-yc3j.onrender.com/weather?city=${city}`);
     const data = await response.json();
 
@@ -16,7 +17,8 @@ async function getWeather() {
       return;
     }
 
-    resultEl.innerText = `Weather in ${data.city}: ${data.temperature}°C, ${data.description}`;
+    // display weather
+    resultEl.innerText = `Weather in ${data.city}: ${data.temp}°C, ${data.description}`;
   } catch (err) {
     resultEl.innerText = "Error fetching weather.";
     console.error(err);
